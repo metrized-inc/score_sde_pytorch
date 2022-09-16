@@ -19,10 +19,10 @@ import torch
 import torch.nn as nn
 import functools
 
-from .utils import get_sigmas, register_model
-from .layers import (CondRefineBlock, RefineBlock, ResidualBlock, ncsn_conv3x3,
+from models.utils import get_sigmas, register_model
+from models.layers import (CondRefineBlock, RefineBlock, ResidualBlock, ncsn_conv3x3,
                      ConditionalResidualBlock, get_act)
-from .normalization import get_normalization
+from models.normalization import get_normalization
 
 CondResidualBlock = ConditionalResidualBlock
 conv3x3 = ncsn_conv3x3

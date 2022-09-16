@@ -23,7 +23,7 @@ import torch
 import torch.nn as nn
 import functools
 
-from . import utils, layers, normalization
+from models import utils, layers, normalization
 
 RefineBlock = layers.RefineBlock
 ResidualBlock = layers.ResidualBlock
